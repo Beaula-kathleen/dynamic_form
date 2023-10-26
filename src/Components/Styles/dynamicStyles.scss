@@ -1,0 +1,129 @@
+.navBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: x-large;
+    padding: 1% 2%;
+    background-color:rgb(96, 15, 153);
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bolder;
+}
+.fontAwesomeIcon,button{
+    cursor: pointer;
+}
+.modalCreation{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.4);
+    height: 100%;
+    width: 100%;
+.fileCreation{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    border: solid black 2px;
+    // height: 100%;
+    background-color: whitesmoke;
+    .closeModal{
+        align-self: flex-end;
+        margin: 3%;
+    }
+    input{
+        height: 5vh;
+        margin: 4% 0%; 
+    }
+    textarea{
+        height: 10vh;
+        resize: none;
+        margin-top: 2%;
+    }
+    button{
+        background-color: lighten($color: rgb(96, 15, 153), $amount: 5);
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        font-weight: bold;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        color: white;
+        text-transform:uppercase;
+        height: 5vh;
+        width: 35%;
+        margin: 5% 0%;
+    }    
+}}
+.errorField{
+    align-items: center;
+    color: rgb(214, 21, 21);
+}
+.dynamicFormField{
+    display: flex;
+    width: 15%;
+    font-size: small;
+.navButtons{
+    width: 100%;
+    margin: 0% 2%;
+    height: 5vh;
+    font-size: medium;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    font-weight: bold;
+    color: lighten($color: rgb(96, 15, 153), $amount: 5);
+}}
+.displayFiles{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    .fileList{
+      height: 70%;
+      margin:10% 5%;
+      width: 100px;
+      border: lighten($color: rgb(96, 15, 153), $amount: 5);
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      .filesIcons{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: x-large;
+        height: 10vh;
+        border-radius: 50%;
+        background-color: lighten($color: rgb(96, 15, 153), $amount: 5);
+      }
+    }
+  
+  .dropdown {
+      position: relative;
+      display: inline-block;
+      margin: 0% 1%;
+    }
+    .dropdownContent {
+      display: none;
+      position: absolute;
+      background-color: #f1f1f1;
+      width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1; 
+      top: 60%;
+    }    
+    .dropdownContent {
+      cursor: pointer;
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      margin:0% 70%;
+      text-align: start;
+    }
+    .dropDownList{
+      padding: 5%;
+    }}
+    .dropdownContent :hover{
+        background-color: lighten($color: rgb(96, 15, 153), $amount: 5);
+    }

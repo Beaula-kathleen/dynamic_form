@@ -1,0 +1,164 @@
+.dynamicContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 78vh;
+  width: 99.9%;
+  padding-top: 1%;
+  background-color: lighten($color: rgb(206, 179, 226), $amount: 5);
+  box-sizing: border-box;
+  .parentContainer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    overflow-x: hidden;
+    justify-content: space-evenly;
+    .listArea {
+      display: flex;
+      flex-direction: column;
+      height: 70vh;
+      width: 22%;
+      margin: 0%;
+      .optionsArea {
+        overflow-y: scroll;
+        height: 93%;
+        margin: 5%;
+        .componentItems {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+          padding: 5% 0%;
+          margin: 4% 0%;
+          width: 100%;
+          background-color: lighten($color: aliceblue, $amount: 20%);
+          height: 6vh;
+          align-items: center;
+        }
+      }
+    }
+  }
+
+  .viewEdit {
+    height: 73vh;
+    width: 70%;
+    .viewArea {
+      background-color: rgba(95, 15, 153, 0.473);     
+      height: 88%;
+      width: 100%;
+      margin: 3% 0%;
+      padding-top: 1%;
+      overflow-x: hidden;
+      .textFieldHolder {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;   
+        input[type= "text"]{
+          height: 5vh;
+        }.viewAreaInputs{
+          margin: 1% 0%;
+        }
+        .inputArea {
+          display: flex;
+          margin: 1% 0%;
+          .requiredFields {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+          }
+          .requiredInput {
+            display: flex;
+            align-items: center;
+            margin: 0% 27%;
+          }
+          button {
+            background: none;
+            border: none;
+          }
+        }
+        .optionComponent ,.imageUpload{
+          display: flex;
+          flex-direction: column;
+          .addOptions {
+            margin: 2% 0%;
+            width: 50%;
+            font-size: medium;
+            font-weight: bold;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            background: lighten($color: rgb(45, 0, 77), $amount: 20);
+          }
+          .displayOptions{
+            display: flex;
+            margin: 2% 0%;
+            align-items: center;
+            button{
+              background: none;
+              border: none;
+              align-items: flex-end;
+              color: lighten($color: rgba(38, 3, 63, 0.945), $amount: 20);
+              font-size: medium;
+            }
+            input[type="text"]{
+              height: 3vh;
+            }           
+          }
+        }
+      }
+    }
+  }
+}
+.mobileViews {
+  height: 60vh;
+  width: 25%;
+  .mobileDisplay {
+    overflow-x: hidden;
+    margin: 5% 15%;
+    height: 90%;
+    border: 8px black solid;
+    border-radius: 8%;
+    background-color: white;
+    .displayArea {
+      margin-top: 10%;
+      display: flex;
+      flex-direction: column;
+      input {
+        height: 30%;
+      }
+      textarea {
+        height: 9vh;
+        resize: none;
+      }
+      .mobileInputs {
+        display: flex;
+        flex-direction: column;
+        margin: 5%;
+        .lablePreview {
+          margin: 0% 0% 2% 0%;
+          align-self: flex-start;
+        }
+      }
+      .optionalValue {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+      audio {
+        width: auto;
+      }
+      .requiredField {
+        color: red;
+        padding-left: 1%;
+      }
+      .fieldValues {
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+ 
+}
+::-webkit-scrollbar {
+  display: none;
+}
